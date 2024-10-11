@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKULATORR PENJUMLAHAN</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(45deg, #474343, #1c1b1b);
+        }
+        .calculator {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 30px;
+            padding: 60px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align:center; 
+        }
+        input {
+            width: 90%; 
+            padding: 10px;
+            margin: 5px auto; 
+            border: 1px solid #ddd;
+            border-radius: 80px;
+        }
+        button {
+            width: 45%; 
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 10px 5px; 
+        }
+        button:hover {
+            background-color: #787e78;
+        }
+        #result {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+       <h2 style="font-family: 'Times New Roman', Times, serif;">
+        Kalkulator Penjumlahan
+       </h2>
+        <p>Masukkan bilangan pertama</p>
+        <input type="number" id="num1" placeholder="Enter first number">
+        <p>Masukkan bilangan kedua</p>
+        <input type="number" id="num2" placeholder="Enter second number">
+        <button onclick="add()">Add</button>
+        <button onclick="reset()">Reset</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function add() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const sum = num1 + num2;
+            document.getElementById('result').innerHTML = `Result: ${sum}`;
+        }
+
+        function reset() {
+            document.getElementById('num1').value = '';
+            document.getElementById('num2').value = '';
+            document.getElementById('result').innerHTML = '';
+        }
+    </script>
+</body>
+</html>
