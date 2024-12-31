@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penitipan Anak Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Form Penitipan Anak</h2>
+        <form action="PenitipanAnak.php" method="POST">
+            <label for="nama">Nama Anak:</label>
+            <input type="text" id="nama" name="nama" required><br>
+
+            <label for="usia">Usia Anak:</label>
+            <input type="number" id="usia" name="usia" required><br>
+
+            <label for="durasi">Durasi Penitipan (jam):</label>
+            <input type="number" id="durasi" name="durasi" required><br>
+
+            <button type="submit" name="submit">Tambah Data Penitipan</button>
+        </form>
+    </div>
+</body>
+</html>
