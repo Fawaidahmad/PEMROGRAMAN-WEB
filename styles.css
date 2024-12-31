@@ -1,0 +1,110 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.search-bar {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f38d19;
+}
+
+.banner-content h1 {
+  font-size: 2rem;
+}
+
+.banner-content span {
+  color: red;
+}
+
+.banner-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.categories {
+  text-align: center;
+  padding: 20px;
+}
+
+.category-items {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.category {
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.new-arrivals, .on-sale, .coming-soon {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-card {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+footer .app-download button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
